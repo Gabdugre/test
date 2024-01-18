@@ -1,0 +1,25 @@
+Create first depot Git
+
+1 git int
+    Créer dépot Git
+
+2 git config --global init.defaultBranch "....."
+
+3 git status
+    Vérifier état des fichiers
+
+git config --global user.name "..."
+git config --global user.email "..."
+
+4 git add "nom fichier"
+    ajout d'un fichier
+git add "...." "..."
+    ajout des fichiers nommés
+git add --global
+    ajout de tous les fichiers
+
+5 git commit -m "mess..."
+    enregistrer les modifications
+
+6 git push "nombranch"
+    envoie des dernières modifs vers dépôt distant

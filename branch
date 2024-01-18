@@ -1,0 +1,7 @@
+Les branch
+
+git branch
+    voir les branches
+
+git checkout "nombranch"
+    changer de branch
