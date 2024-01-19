@@ -1,3 +1,48 @@
 Trouver dépôt git
 
-git -reparse --
+
+    Pour récupérer le chemin d'un dépôt Git, vous pouvez utiliser la commande git rev-parse avec l'option --show-toplevel.
+    Cette commande renverra le chemin absolu du répertoire racine du dépôt Git dans lequel vous vous trouvez.
+    Voici comment vous pouvez le faire dans le terminal :
+
+git rev-parse --show-toplevel
+
+    Cette commande renverra le chemin absolu du répertoire racine du dépôt Git courant.
+    Assurez-vous d'être dans le répertoire du dépôt Git que vous souhaitez vérifier avant d'exécuter cette commande.
+
+
+
+
+    Si vous souhaitez obtenir le chemin du dépôt Git d'un autre répertoire sans vous déplacer vers ce répertoire,
+    vous pouvez spécifier le chemin du répertoire comme argument pour git rev-parse :
+
+git rev-parse --show-toplevel /chemin/vers/le/depot
+
+    Remplacez "/chemin/vers/le/depot" par le chemin du répertoire que vous souhaitez vérifier.
+
+    Pour récupérer l'URL d'un dépôt Git, vous pouvez utiliser la commande git remote dans le répertoire de votre projet.
+    Voici comment procéder :
+    Ouvrez votre terminal.
+    Accédez au répertoire de votre projet en utilisant la commande cd (Change Directory). Par exemple :
+
+cd chemin/vers/votre/projet
+
+    Une fois dans le répertoire de votre projet, utilisez la commande suivante pour afficher les noms des dépôts distants associés à votre projet :
+
+git remote -v
+
+    Cette commande affiche les URL des dépôts distants associés à des noms tels que "origin", "upstream", etc.
+    Par exemple, si "origin" est le nom de votre dépôt distant, l'URL sera affichée à côté de "origin".
+    Vous verrez quelque chose comme ceci :
+
+origin  https://github.com/votre-utilisateur/votre-depot.git (fetch)
+origin  https://github.com/votre-utilisateur/votre-depot.git (push)
+
+    Dans cet exemple, l'URL du dépôt est https://github.com/votre-utilisateur/votre-depot.git.
+
+    Si vous n'avez pas encore configuré de dépôt distant, vous pouvez le faire en utilisant la commande git remote add. Par exemple :
+
+git remote add origin https://github.com/votre-utilisateur/votre-depot.git
+
+    Assurez-vous de remplacer l'URL par celle de votre dépôt.
+    Une fois cela fait, vous pourrez utiliser git remote -v pour voir l'URL associée au dépôt distant que vous venez d'ajouter.

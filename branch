@@ -5,3 +5,17 @@ git branch
 
 git checkout "nombranch"
     changer de branch
+
+git ls-files
+    Cette commande affichera les noms des fichiers suivis dans le répertoire de travail de la branche actuelle.
+
+
+
+    Si vous voulez voir la liste des fichiers dans une branche spécifique sans basculer sur cette branche,
+    vous pouvez utiliser git ls-remote avec l'option -h (heads) pour afficher les références de la branche distante :
+git ls-remote --heads origin nom_de_la_branche
+
+
+
+
+
